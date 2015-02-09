@@ -148,10 +148,10 @@ go
 /*==============================================================*/
 create table MEMBER (
    MEMBID               int                  not null,
-   MEMBNAME             varchar(50)          null,
-   MEMBZIP              varchar(50)          null,
-   MSHPID               varchar(5)           null,
-   MSDATEPAYED          date                 null,
+   MEMBNAME             varchar(50)              null,
+   MEMBZIP              varchar(50)              null,
+   MSHPID               varchar(5)               null,
+   MSDATEPAYED          date                     null,
    constraint PK_MEMBER primary key nonclustered (MEMBID)
 )
 go
@@ -242,7 +242,7 @@ go
 create table SOLDVIA (
    STRID                int                  not null,
    MRCHID               varchar(5)           not null,
-   QUANTITY             int                  null,
+   QUANTITY             int                      null,
    constraint PK_SOLDVIA primary key nonclustered (MRCHID, STRID)
 )
 go
@@ -268,11 +268,11 @@ go
 /*==============================================================*/
 create table SPECIALEVENTS (
    CUSTOMERID                varchar(5)      not null,
-   CUSTOMERNAMELOCATIONS     varchar(50)     null,
-   EVENTTYPECODE             varchar(5)      null,
-   EVENTTYPE                 varchar(25)     null,
-   EVENTDATE   				  date     null,
-   AMOUNTCHARGED             float(5)        null,
+   CUSTOMERNAMELOCATIONS     varchar(50)         null,
+   EVENTTYPECODE             varchar(5)          null,
+   EVENTTYPE                 varchar(25)         null,
+   EVENTDATE   				  date                null,
+   AMOUNTCHARGED             float(5)            null,
    constraint PK_SPECIALEVENTS primary key nonclustered (CUSTOMERID)
 )
 go
